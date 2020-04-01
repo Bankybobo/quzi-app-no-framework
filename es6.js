@@ -24,7 +24,7 @@ function loadQuestion () {
         time.style.width = `${timer = timer + 10}px`;
         seconds.innerHTML = seco++
 
-        if (timer === 410) {
+        if (timer === 410 && result.innerHTML === '') {
             container.style.display = "none";
             result.style.display = 'block'
             result.innerHTML += `Your score is: ${score} <br> <button id="playAgain" onclick="location.reload()" class="btn">Play Again</button>`;
@@ -44,7 +44,7 @@ next.addEventListener('click', loadNextQuestion)
 function loadNextQuestion () {
     var yourChoice = document.querySelector('input[type=radio]:checked')
     if(yourChoice === null){
-    window.alert('you have not selected an answer yet')
+    // window.alert('you have not selected an answer yet')
     return;
     }
 
