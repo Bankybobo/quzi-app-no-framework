@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP - No Framework</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+<body>
+
+    <section id="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 ">
+                <h4>This is a quiz of 10 questions to further test my mastery of elementary DOM manipulation. You have 40 seconds to answer the qustions</h4>
+                <button id="start" class="btn">Start</button>
+            </div>
+
+            <div class="col-md-4"></div>
+        </div>
+    </section>
+
+    <section class="container text-light" id="container">
+        <div class="row">
+
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4 question-box">
+                <div id="seconds"></div>
+                <div id="time"></div>
+
+                <h5 id="question"></h5>
+                <label><input type="radio" name="options" value="1" > <span id="option1"></span></label> <br>
+                <label><input type="radio" name="options" value="2" > <span id="option2"></span></label> <br>
+                <label><input type="radio" name="options" value="3" > <span id="option3"></span></label> <br>
+                <label><input type="radio" name="options" value="4" > <span id="option4"></span></label> <br>
+                <button id="nextButton" class="btn">Next Question</button>
+            </div>
+
+            <div class="col-md-4"></div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h3 id="result"> </h3>
+                
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </section>
+
+
+<script src="./questions.js"></script>
+<script src="./es6.js"></script>
+</body>
+</html>

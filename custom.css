@@ -1,0 +1,38 @@
+.container {
+    margin-top: 30vh;
+    padding: 10vh 0;
+    background-color: rgb(14, 14, 65);
+    display: none;
+}
+
+.question-box {
+    color: gold;
+    padding: 30px 40px;
+}
+
+.btn, .btn:hover {
+    color: gold;
+    border: 1px solid gold;
+    margin: 20px 0;
+}
+
+#container-fluid {
+    margin-top: 30vh;
+    padding: 10vh 10vh;
+    background-color: rgb(14, 14, 65);
+    color: rgb(255, 217, 0);
+}
+
+#result{
+    display: none;
+    margin-top: 30vh;
+    padding: 10vh 100px;
+    background-color: rgb(14, 14, 65);
+    color: rgb(255, 217, 2);
+}
+
+#time {
+    height: 10px;
+    background-color: yellow;
+    margin-bottom: 50px;
+}
